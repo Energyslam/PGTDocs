@@ -1,0 +1,4 @@
+var struct_z___construct___u_function___a_user_interface_manager___get_current_score___statics_1_1_u037d1197953daf6466aa6ebf222cb735 =
+[
+    [ "ReturnValue", "struct_z___construct___u_function___a_user_interface_manager___get_current_score___statics_1_1_u037d1197953daf6466aa6ebf222cb735.html#afd0496b66c21801ef6dea6b56271d96f", null ]
+];

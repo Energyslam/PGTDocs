@@ -1,0 +1,6 @@
+var struct_z___construct___u_function___u_local_highscore_accesor___load_txt___statics_1_1_local_hig4f769f0fb333d00ad3476ae0b21346ac =
+[
+    [ "FileNameA", "struct_z___construct___u_function___u_local_highscore_accesor___load_txt___statics_1_1_local_hig4f769f0fb333d00ad3476ae0b21346ac.html#a59a8349e03010160ccf4d8817e927fe1", null ],
+    [ "ReturnValue", "struct_z___construct___u_function___u_local_highscore_accesor___load_txt___statics_1_1_local_hig4f769f0fb333d00ad3476ae0b21346ac.html#a09df98de0a6e2dced5cc985665b71d9a", null ],
+    [ "SaveTextA", "struct_z___construct___u_function___u_local_highscore_accesor___load_txt___statics_1_1_local_hig4f769f0fb333d00ad3476ae0b21346ac.html#ac06585965e6f5124480f6c3d9a0ad59b", null ]
+];

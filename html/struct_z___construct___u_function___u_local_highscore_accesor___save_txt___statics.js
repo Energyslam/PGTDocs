@@ -1,0 +1,4 @@
+var struct_z___construct___u_function___u_local_highscore_accesor___save_txt___statics =
+[
+    [ "LocalHighscoreAccesor_eventSaveTxt_Parms", "struct_z___construct___u_function___u_local_highscore_accesor___save_txt___statics_1_1_local_hig914a192ebe959b6f132c04f9610f193b.html", "struct_z___construct___u_function___u_local_highscore_accesor___save_txt___statics_1_1_local_hig914a192ebe959b6f132c04f9610f193b" ]
+];

@@ -1,0 +1,142 @@
+\hypertarget{class_a_temp_player}{}\section{A\+Temp\+Player Class Reference}
+\label{class_a_temp_player}\index{ATempPlayer@{ATempPlayer}}
+Inheritance diagram for A\+Temp\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_a_temp_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_abab7604d240b01a6b4643d4ab1715acd}\label{class_a_temp_player_abab7604d240b01a6b4643d4ab1715acd}} 
+float {\bfseries Get\+Current\+Speed} ()
+\item 
+\mbox{\Hypertarget{class_a_temp_player_ae2657c5780e4384b6281f1857094c3c6}\label{class_a_temp_player_ae2657c5780e4384b6281f1857094c3c6}} 
+void {\bfseries Set\+Spawn\+Position} ()
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a08782176ec3f528f7057ff989857b6a9}\label{class_a_temp_player_a08782176ec3f528f7057ff989857b6a9}} 
+void {\bfseries Move\+Right} (float Axis\+Value)
+\item 
+\mbox{\Hypertarget{class_a_temp_player_aac043860b6aa360464446dd85d6b6ff8}\label{class_a_temp_player_aac043860b6aa360464446dd85d6b6ff8}} 
+void {\bfseries Pitch\+Camera} (float Axis\+Value)
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a07da2545da43089739937bde60d8bfbc}\label{class_a_temp_player_a07da2545da43089739937bde60d8bfbc}} 
+void {\bfseries Yaw\+Camera} (float Axis\+Value)
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a1702f6989e281436ffd6714c30081c10}\label{class_a_temp_player_a1702f6989e281436ffd6714c30081c10}} 
+void {\bfseries Has\+To\+Activate\+Player} (bool player\+State)
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a50ca9988a356376957e52098b3d271e3}\label{class_a_temp_player_a50ca9988a356376957e52098b3d271e3}} 
+bool {\bfseries Get\+Game\+State} ()
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a542e0b12e5b9df0a7d53365d99435b45}\label{class_a_temp_player_a542e0b12e5b9df0a7d53365d99435b45}} 
+void {\bfseries Stop\+Moving} (bool stop)
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a49cbf48c04c0afabf76a56ad1466a5c2}\label{class_a_temp_player_a49cbf48c04c0afabf76a56ad1466a5c2}} 
+void {\bfseries Camera\+Shake} ()
+\item 
+\mbox{\Hypertarget{class_a_temp_player_aee1e2803664bcd04a5e91d6137b5eedc}\label{class_a_temp_player_aee1e2803664bcd04a5e91d6137b5eedc}} 
+void {\bfseries On\+Death} ()
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a0520be909f24bfd151c47519b599ba99}\label{class_a_temp_player_a0520be909f24bfd151c47519b599ba99}} 
+void {\bfseries Die} ()
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a1ea1ea9ebe5cc51e792337cabe05fdf6}\label{class_a_temp_player_a1ea1ea9ebe5cc51e792337cabe05fdf6}} 
+void {\bfseries Set\+Field\+Of\+View\+To} (int new\+Value, int seconds)
+\item 
+\mbox{\Hypertarget{class_a_temp_player_acdf7ec422b79ce05771bdb87c2e8a14f}\label{class_a_temp_player_acdf7ec422b79ce05771bdb87c2e8a14f}} 
+void {\bfseries Reset\+Field\+Of\+View} ()
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a4c46d5d1efb214eb30115dd4a8d50260}\label{class_a_temp_player_a4c46d5d1efb214eb30115dd4a8d50260}} 
+virtual void {\bfseries Tick} (float Delta\+Time) override
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a91ed4730cf7f8252919b5002a0353189}\label{class_a_temp_player_a91ed4730cf7f8252919b5002a0353189}} 
+virtual void {\bfseries Setup\+Player\+Input\+Component} (class U\+Input\+Component $\ast$Player\+Input\+Component) override
+\item 
+\mbox{\Hypertarget{class_a_temp_player_af6cc1013fc003bcff6db93a3d3d595f6}\label{class_a_temp_player_af6cc1013fc003bcff6db93a3d3d595f6}} 
+void {\bfseries Add\+Track\+Pivots} (F\+Vector pivot)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a77c591dff2e42fab6fdd70ec46b5bda3}\label{class_a_temp_player_a77c591dff2e42fab6fdd70ec46b5bda3}} 
+float {\bfseries speed\+Per\+Frame} = 10.\+0f
+\item 
+\mbox{\Hypertarget{class_a_temp_player_ad940076719a041aa4ce0e164174fdfdb}\label{class_a_temp_player_ad940076719a041aa4ce0e164174fdfdb}} 
+float {\bfseries original\+Speed\+Per\+Frame}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_aad3e6f2d0f7320dce97ec66c41ef01a8}\label{class_a_temp_player_aad3e6f2d0f7320dce97ec66c41ef01a8}} 
+float \mbox{\hyperlink{class_a_temp_player_aad3e6f2d0f7320dce97ec66c41ef01a8}{constant\+Forward\+Speed\+Per\+Frame}} = 50.\+0f
+\begin{DoxyCompactList}\small\item\em Used to give a constant movement forward. \end{DoxyCompactList}\item 
+class U\+Camera\+Component $\ast$ \mbox{\hyperlink{class_a_temp_player_a087ae8167b171f1f62c892cc1fcccaf0}{camera}}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_af91019d0131cd7d971da9eb0d0e8e061}\label{class_a_temp_player_af91019d0131cd7d971da9eb0d0e8e061}} 
+class U\+Spring\+Arm\+Component $\ast$ {\bfseries spring\+Arm}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_ae581707fc2b5d56470b683e1871d6931}\label{class_a_temp_player_ae581707fc2b5d56470b683e1871d6931}} 
+class U\+Static\+Mesh\+Component $\ast$ {\bfseries sphere\+Visual}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a2b10a92ce2ae4f6d9eb2cd3668b78a56}\label{class_a_temp_player_a2b10a92ce2ae4f6d9eb2cd3668b78a56}} 
+class U\+Sphere\+Component $\ast$ {\bfseries sphere\+Component}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a607b126372d12e26ac43b3c33020d263}\label{class_a_temp_player_a607b126372d12e26ac43b3c33020d263}} 
+class U\+Scene\+Component $\ast$ {\bfseries empty\+Component}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a07c141a150f2983259fd476ea7761389}\label{class_a_temp_player_a07c141a150f2983259fd476ea7761389}} 
+\mbox{\hyperlink{class_a_track_generator_bezier}{A\+Track\+Generator\+Bezier}} $\ast$ {\bfseries track\+Generator\+Bezier}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a67a2b59b09ab7a3aabb9c0cc1d23e617}\label{class_a_temp_player_a67a2b59b09ab7a3aabb9c0cc1d23e617}} 
+T\+Subclass\+Of$<$ \mbox{\hyperlink{class_u_collision_camera_shake}{U\+Collision\+Camera\+Shake}} $>$ {\bfseries shake}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_abeeef7c722e14fb1d087239ebe7db40d}\label{class_a_temp_player_abeeef7c722e14fb1d087239ebe7db40d}} 
+F\+Vector {\bfseries Movement\+Input}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a0ff43db59c846d471861a2d2b7f72a28}\label{class_a_temp_player_a0ff43db59c846d471861a2d2b7f72a28}} 
+F\+Vector2D {\bfseries Camera\+Input}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_ad50276ef867eacf5cbab70386d5ea4b8}\label{class_a_temp_player_ad50276ef867eacf5cbab70386d5ea4b8}} 
+F\+Vector {\bfseries start\+Position}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_aa61729cbbc9c808e273b8ff7380b05e8}\label{class_a_temp_player_aa61729cbbc9c808e273b8ff7380b05e8}} 
+bool {\bfseries player\+Active} = false
+\item 
+\mbox{\Hypertarget{class_a_temp_player_ac06dc7ef414b6dfd45b80744ff70771c}\label{class_a_temp_player_ac06dc7ef414b6dfd45b80744ff70771c}} 
+bool {\bfseries resetting\+F\+OV} = false
+\item 
+\mbox{\Hypertarget{class_a_temp_player_ad447762e085c9f82d230776d74cf44d5}\label{class_a_temp_player_ad447762e085c9f82d230776d74cf44d5}} 
+bool {\bfseries increasing\+F\+OV} = false
+\item 
+\mbox{\Hypertarget{class_a_temp_player_a27b32530d8edaa9bfa115b47a1ce777e}\label{class_a_temp_player_a27b32530d8edaa9bfa115b47a1ce777e}} 
+float {\bfseries lowest\+VerticeZ}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_aef5a8139028bd00a0030e99db5fc68e8}\label{class_a_temp_player_aef5a8139028bd00a0030e99db5fc68e8}} 
+float {\bfseries z\+Position}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_abab75a2e63573f4b0ed2b02ff0f108d2}\label{class_a_temp_player_abab75a2e63573f4b0ed2b02ff0f108d2}} 
+float {\bfseries current\+F\+OV} = 100
+\item 
+\mbox{\Hypertarget{class_a_temp_player_ae5fddd2dbc2e2fbd1eb4adc60c1074fe}\label{class_a_temp_player_ae5fddd2dbc2e2fbd1eb4adc60c1074fe}} 
+float {\bfseries new\+F\+OV}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_a_temp_player_aceace2056147a31a0c6a90a3665a4971}\label{class_a_temp_player_aceace2056147a31a0c6a90a3665a4971}} 
+virtual void {\bfseries Begin\+Play} () override
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_a_temp_player_a087ae8167b171f1f62c892cc1fcccaf0}\label{class_a_temp_player_a087ae8167b171f1f62c892cc1fcccaf0}} 
+\index{ATempPlayer@{ATempPlayer}!camera@{camera}}
+\index{camera@{camera}!ATempPlayer@{ATempPlayer}}
+\subsubsection{\texorpdfstring{camera}{camera}}
+{\footnotesize\ttfamily class U\+Camera\+Component$\ast$ A\+Temp\+Player\+::camera}
+
+Components have been made a U\+P\+R\+O\+P\+E\+R\+T\+Y(\+Edit\+Anywhere) and public to force them to be visible in the UE editor 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Max/\+Documents/pgtbestprojectever/\+Penguin Glide/\+Penguin\+Glide/\+Source/\+Penguin\+Glide/\+Public/Temp\+Player.\+h\item 
+C\+:/\+Users/\+Max/\+Documents/pgtbestprojectever/\+Penguin Glide/\+Penguin\+Glide/\+Source/\+Penguin\+Glide/\+Private/Temp\+Player.\+cpp\end{DoxyCompactItemize}
