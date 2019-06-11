@@ -1,0 +1,4 @@
+var struct_z___construct___u_function___a_speed_boost_generator___notify___statics =
+[
+    [ "SpeedBoostGenerator_eventNotify_Parms", "struct_z___construct___u_function___a_speed_boost_generator___notify___statics_1_1_speed_boost_generator__event_notify___parms.html", "struct_z___construct___u_function___a_speed_boost_generator___notify___statics_1_1_speed_boost_generator__event_notify___parms" ]
+];

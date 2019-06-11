@@ -1,0 +1,4 @@
+var struct_z___construct___u_function___a_user_interface_manager___get_current_speed___statics_1_1_ubc346b0ed869520295c1fcbac47fc630 =
+[
+    [ "ReturnValue", "struct_z___construct___u_function___a_user_interface_manager___get_current_speed___statics_1_1_ubc346b0ed869520295c1fcbac47fc630.html#a5b58e4ed8d2d562b4bc762e1d0b8612a", null ]
+];

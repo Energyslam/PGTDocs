@@ -11,7 +11,6 @@ var searchData=
   ['aspeedboostgenerator',['ASpeedBoostGenerator',['../class_a_speed_boost_generator.html',1,'']]],
   ['atempplayer',['ATempPlayer',['../class_a_temp_player.html',1,'']]],
   ['atemppowerup',['ATEMPpowerUp',['../class_a_t_e_m_ppower_up.html',1,'']]],
-  ['atrackgenerator',['ATrackGenerator',['../class_a_track_generator.html',1,'']]],
   ['atrackgeneratorbezier',['ATrackGeneratorBezier',['../class_a_track_generator_bezier.html',1,'']]],
   ['auserinterfacemanager',['AUserInterfaceManager',['../class_a_user_interface_manager.html',1,'']]],
   ['awakparticlesystem',['AWakParticleSystem',['../class_a_wak_particle_system.html',1,'']]]
