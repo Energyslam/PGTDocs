@@ -94,6 +94,11 @@ $(document).ready(function(){initNavTree('class_a_snowball.html','');});
 <div class="title">ASnowball Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class is used to handle the snowball movement and collision with the player.  
+ <a href="class_a_snowball.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_snowball_8h_source.html">Snowball.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ASnowball:</div>
 <div class="dyncontent">
@@ -103,14 +108,15 @@ Inheritance diagram for ASnowball:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a51e944d6eae2e6c4ff61087b4932988e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a51e944d6eae2e6c4ff61087b4932988e">ASnowball</a> ()</td></tr>
+<tr class="separator:a51e944d6eae2e6c4ff61087b4932988e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa413616dcb4fdff34ab8c543f6bca7fe"><td class="memItemLeft" align="right" valign="top"><a id="aa413616dcb4fdff34ab8c543f6bca7fe"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPositions</b> (TArray&lt; FVector &gt; lerpPos, float offset)</td></tr>
 <tr class="separator:aa413616dcb4fdff34ab8c543f6bca7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdd53cf202d12fc2c5f120c9c23d77d5"><td class="memItemLeft" align="right" valign="top"><a id="abdd53cf202d12fc2c5f120c9c23d77d5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDeath</b> ()</td></tr>
+<tr class="memitem:abdd53cf202d12fc2c5f120c9c23d77d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#abdd53cf202d12fc2c5f120c9c23d77d5">OnDeath</a> ()</td></tr>
+<tr class="memdesc:abdd53cf202d12fc2c5f120c9c23d77d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">calls the player ondeath function  <a href="#abdd53cf202d12fc2c5f120c9c23d77d5">More...</a><br /></td></tr>
 <tr class="separator:abdd53cf202d12fc2c5f120c9c23d77d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64d038ba27c2390cbd101505690a8e51"><td class="memItemLeft" align="right" valign="top"><a id="a64d038ba27c2390cbd101505690a8e51"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Tick</b> (float DeltaTime) override</td></tr>
+<tr class="memitem:a64d038ba27c2390cbd101505690a8e51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a64d038ba27c2390cbd101505690a8e51">Tick</a> (float DeltaTime) override</td></tr>
 <tr class="separator:a64d038ba27c2390cbd101505690a8e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -148,13 +154,114 @@ UMaterialInstanceDynamic *&#160;</td><td class="memItemRight" valign="bottom"><b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a760c05ce68090af79cb18cf354c2476c"><td class="memItemLeft" align="right" valign="top"><a id="a760c05ce68090af79cb18cf354c2476c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginPlay</b> () override</td></tr>
+<tr class="memitem:a760c05ce68090af79cb18cf354c2476c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a760c05ce68090af79cb18cf354c2476c">BeginPlay</a> () override</td></tr>
 <tr class="separator:a760c05ce68090af79cb18cf354c2476c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is used to handle the snowball movement and collision with the player. </p>
+<p>The snowball uses a bezier curve to move across the horizontal curve of the track. A bezier curve is chosen because there was familiarity with the math and having two control points allows for more control over the curve that it follows. The track will give the node positions during the mesh creation. It relies on the left and right vertices for its start and end node, and the amount of vertices on the horizontal axis divided by 2/4 and 3/4 for its control points. The t for the lerp function of the bezier curve continuously counts up and down so the snowball moves positions. This is chosen over using actual physics due to difficulty of having the snowball follow the correct path using the physics engine. It has a pointer to the SoundManager in the level to play the impact sound as we're not using a blueprint for the snowball. Playing sound through c++ has proven to be difficult to implement.</p>
+<dl class="section author"><dt>Author</dt><dd>Max Groen </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>04/06/2019 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Energyslam™ </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a51e944d6eae2e6c4ff61087b4932988e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51e944d6eae2e6c4ff61087b4932988e">&#9670;&nbsp;</a></span>ASnowball()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ASnowball::ASnowball </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&lt; Creates a basic static mesh to which we assign a sphere</p>
+<p>Creates the mesh by using the UE4 sphere and assign it several collision parameters to be used</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a760c05ce68090af79cb18cf354c2476c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a760c05ce68090af79cb18cf354c2476c">&#9670;&nbsp;</a></span>BeginPlay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ASnowball::BeginPlay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>&lt; tells the engine to check for overlaps with this object </p>
+
+</div>
+</div>
+<a id="abdd53cf202d12fc2c5f120c9c23d77d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd53cf202d12fc2c5f120c9c23d77d5">&#9670;&nbsp;</a></span>OnDeath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ASnowball::OnDeath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calls the player ondeath function </p>
+
+</div>
+</div>
+<a id="a64d038ba27c2390cbd101505690a8e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d038ba27c2390cbd101505690a8e51">&#9670;&nbsp;</a></span>Tick()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ASnowball::Tick </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>DeltaTime</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>&lt; has a semi-timer to prevent the object from calling the player position each frame</p>
+<p>&lt; if it is not counter down, add the movement/speed value.</p>
+<p>This is the bezier curve function. It is the same way we create the track and its curve. It does a linear interpolation between the linear interpolation of the linear interpolation between the nodes, and then sets the snowball location to the distance between this interpolation * the lerpValue. This way we can simulate a moving snowball.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Max/Documents/pgtbestprojectever/Penguin Glide/PenguinGlide/Source/PenguinGlide/Public/<a class="el" href="_snowball_8h_source.html">Snowball.h</a></li>
-<li>C:/Users/Max/Documents/pgtbestprojectever/Penguin Glide/PenguinGlide/Source/PenguinGlide/Private/Snowball.cpp</li>
+<li>C:/Users/Max/Documents/pgtbestprojectever/Penguin Glide/PenguinGlide/Source/PenguinGlide/public/<a class="el" href="_snowball_8h_source.html">Snowball.h</a></li>
+<li>C:/Users/Max/Documents/pgtbestprojectever/Penguin Glide/PenguinGlide/Source/PenguinGlide/private/Snowball.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

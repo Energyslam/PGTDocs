@@ -42,8 +42,10 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_collision_camera_shake_8generated_8h_source.html",
-"dir_d805663c8a8cf7658f258a41934f08fe.html"
+".html",
+"class_catch_1_1_detail_1_1_approx.html#aa9adf5f05e641df770039543d5067d30",
+"struct_catch_1_1_i_config.html#aa2315800a05c19db71518b1edc39d43b",
+"struct_catch_1_1_source_line_info.html#af07e4fdeddf8409b91e4f842f6264cf8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

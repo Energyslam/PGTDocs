@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('class_a_interactable.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -105,13 +106,20 @@ Inheritance diagram for AInteractable:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad90cf570632e0d6b1955cd7e696938bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_interactable.html#ad90cf570632e0d6b1955cd7e696938bf">AInteractable</a> ()</td></tr>
+<tr class="separator:ad90cf570632e0d6b1955cd7e696938bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a3d2a5d5588e3f4eccdc46eb3713b8aa5"><td class="memItemLeft" align="right" valign="top"><a id="a3d2a5d5588e3f4eccdc46eb3713b8aa5"></a>
-class UParticleSystemComponent *&#160;</td><td class="memItemRight" valign="bottom"><b>MyParticleSystem</b></td></tr>
+class UParticleSystemComponent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_interactable.html#a3d2a5d5588e3f4eccdc46eb3713b8aa5">MyParticleSystem</a></td></tr>
+<tr class="memdesc:a3d2a5d5588e3f4eccdc46eb3713b8aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">This particle system is always playing until it is picked up. <br /></td></tr>
 <tr class="separator:a3d2a5d5588e3f4eccdc46eb3713b8aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4a89c8a06832dfddc15258f63a20fd0"><td class="memItemLeft" align="right" valign="top"><a id="ae4a89c8a06832dfddc15258f63a20fd0"></a>
-class UParticleSystemComponent *&#160;</td><td class="memItemRight" valign="bottom"><b>MyConstantParticleSystem</b></td></tr>
+class UParticleSystemComponent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_interactable.html#ae4a89c8a06832dfddc15258f63a20fd0">MyConstantParticleSystem</a></td></tr>
+<tr class="memdesc:ae4a89c8a06832dfddc15258f63a20fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">this particle system will only play once it has been picked up <br /></td></tr>
 <tr class="separator:ae4a89c8a06832dfddc15258f63a20fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -138,6 +146,31 @@ FString&#160;</td><td class="memItemRight" valign="bottom"><b>warning</b></td></
 FColor&#160;</td><td class="memItemRight" valign="bottom"><b>warningColor</b></td></tr>
 <tr class="separator:a52d9ed98781301df4b341802e2356bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ad90cf570632e0d6b1955cd7e696938bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad90cf570632e0d6b1955cd7e696938bf">&#9670;&nbsp;</a></span>AInteractable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AInteractable::AInteractable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&lt; creates a staticmeshcomponent and assigns it to the root later</p>
+<p>tells the mesh to adjust some of the default settings. A actor with collision needs to simulate physics but these physics have been set to non-functional in the blueprint as we don't actually want these to move.</p>
+<p>&lt; the name of one of the default settings for UE physics</p>
+<p>&lt; the type of overlap response</p>
+<p>&lt; tells the engine that this object has an overlap event</p>
+<p>uses the constructorhelpers to find the particles system needed in the content browser</p>
+<p>&lt; only if it has succesfully found the particle system, will it try to use the object attached to it </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>C:/Users/Max/Documents/pgtbestprojectever/Penguin Glide/PenguinGlide/Source/PenguinGlide/<a class="el" href="_interactable_8h_source.html">Interactable.h</a></li>
 <li>C:/Users/Max/Documents/pgtbestprojectever/Penguin Glide/PenguinGlide/Source/PenguinGlide/Interactable.cpp</li>

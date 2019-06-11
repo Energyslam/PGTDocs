@@ -93,6 +93,11 @@ $(document).ready(function(){initNavTree('class_a_sound_manager.html','');});
 <div class="title">ASoundManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class is used to store sounds and has methods that can be called to play them.  
+ <a href="class_a_sound_manager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_sound_manager_8h_source.html">SoundManager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ASoundManager:</div>
 <div class="dyncontent">
@@ -121,9 +126,16 @@ Protected Member Functions</h2></td></tr>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginPlay</b> () override</td></tr>
 <tr class="separator:ab91f90dafc9ff9664c13e256668e76ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Users/Max/Documents/pgtbestprojectever/Penguin Glide/PenguinGlide/Source/PenguinGlide/Public/<a class="el" href="_sound_manager_8h_source.html">SoundManager.h</a></li>
-<li>C:/Users/Max/Documents/pgtbestprojectever/Penguin Glide/PenguinGlide/Source/PenguinGlide/Private/SoundManager.cpp</li>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is used to store sounds and has methods that can be called to play them. </p>
+<p>The class has an attached blueprint based on this class. The blueprint has the information about the sounds and on what channel to play them. The methods in this class can be called to play a function in the blueprint. It also contains a pointer to the level sequence attached to the instanced SoundManager to play once a player moves to the game over screen. This is purely because we only need to call this sequence once per playthrough and this class is already instantiated. It has timer to prevent from playing continuously in a row.</p>
+<dl class="section author"><dt>Author</dt><dd>Max Groen </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>02/06/2019 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Energyslam™ </dd></dl>
+</div><hr/>The documentation for this class was generated from the following files:<ul>
+<li>C:/Users/Max/Documents/pgtbestprojectever/Penguin Glide/PenguinGlide/Source/PenguinGlide/public/<a class="el" href="_sound_manager_8h_source.html">SoundManager.h</a></li>
+<li>C:/Users/Max/Documents/pgtbestprojectever/Penguin Glide/PenguinGlide/Source/PenguinGlide/private/SoundManager.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

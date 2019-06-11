@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pointspacer',['pointSpacer',['../class_mesh_section.html#a188f8de85abd38f3fe7ba38dfc399a56',1,'MeshSection']]]
+  ['nodeamount',['nodeAmount',['../class_mesh_section.html#ad512298b76157bb8f773e206dd285a5d',1,'MeshSection']]]
 ];

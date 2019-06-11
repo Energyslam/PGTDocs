@@ -1,4 +1,0 @@
-var struct_z___construct___u_function___a_user_interface_manager___get_last_score___statics_1_1_user926d34881b3e8be3d0bccfb5d9183fea =
-[
-    [ "ReturnValue", "struct_z___construct___u_function___a_user_interface_manager___get_last_score___statics_1_1_user926d34881b3e8be3d0bccfb5d9183fea.html#adf2ef02417fe85ff79f896d6f949eb93", null ]
-];

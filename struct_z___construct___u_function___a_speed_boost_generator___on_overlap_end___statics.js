@@ -1,4 +1,0 @@
-var struct_z___construct___u_function___a_speed_boost_generator___on_overlap_end___statics =
-[
-    [ "SpeedBoostGenerator_eventOnOverlapEnd_Parms", "struct_z___construct___u_function___a_speed_boost_generator___on_overlap_end___statics_1_1_speed3abca8d0eca565059cbc14200328307a.html", "struct_z___construct___u_function___a_speed_boost_generator___on_overlap_end___statics_1_1_speed3abca8d0eca565059cbc14200328307a" ]
-];

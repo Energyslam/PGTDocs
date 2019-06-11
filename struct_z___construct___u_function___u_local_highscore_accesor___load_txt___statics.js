@@ -1,4 +1,0 @@
-var struct_z___construct___u_function___u_local_highscore_accesor___load_txt___statics =
-[
-    [ "LocalHighscoreAccesor_eventLoadTxt_Parms", "struct_z___construct___u_function___u_local_highscore_accesor___load_txt___statics_1_1_local_hig4f769f0fb333d00ad3476ae0b21346ac.html", "struct_z___construct___u_function___u_local_highscore_accesor___load_txt___statics_1_1_local_hig4f769f0fb333d00ad3476ae0b21346ac" ]
-];
