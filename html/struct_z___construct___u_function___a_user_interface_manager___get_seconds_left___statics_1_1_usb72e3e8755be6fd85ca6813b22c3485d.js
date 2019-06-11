@@ -1,4 +1,0 @@
-var struct_z___construct___u_function___a_user_interface_manager___get_seconds_left___statics_1_1_usb72e3e8755be6fd85ca6813b22c3485d =
-[
-    [ "ReturnValue", "struct_z___construct___u_function___a_user_interface_manager___get_seconds_left___statics_1_1_usb72e3e8755be6fd85ca6813b22c3485d.html#a775e0599a1da470db8a43b3f2738208d", null ]
-];

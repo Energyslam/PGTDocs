@@ -1,5 +1,0 @@
-var struct_z___construct___u_function___a_user_interface_manager___get_top_x_high_scores___statics_1304ac90e56efdd7702dabb87cd8072a7 =
-[
-    [ "amountToGet", "struct_z___construct___u_function___a_user_interface_manager___get_top_x_high_scores___statics_1304ac90e56efdd7702dabb87cd8072a7.html#afab434a69f5599193ea7c623f474b92c", null ],
-    [ "ReturnValue", "struct_z___construct___u_function___a_user_interface_manager___get_top_x_high_scores___statics_1304ac90e56efdd7702dabb87cd8072a7.html#a1130af7925cf36592499e959dd9ba0b4", null ]
-];
