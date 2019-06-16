@@ -12,5 +12,9 @@ var class_catch_1_1_assertion_handler =
     [ "handleThrowingCallSkipped", "class_catch_1_1_assertion_handler.html#a67a194d5518f307c4a16faa03a7f7442", null ],
     [ "handleUnexpectedExceptionNotThrown", "class_catch_1_1_assertion_handler.html#a7764d0adb6ed5eeb10964f6abc02fab1", null ],
     [ "handleUnexpectedInflightException", "class_catch_1_1_assertion_handler.html#aa2504dad6a91f3645e5f52c932c11270", null ],
-    [ "setCompleted", "class_catch_1_1_assertion_handler.html#a6756bd5395c0ddd28764a9fb4612d5e4", null ]
+    [ "setCompleted", "class_catch_1_1_assertion_handler.html#a6756bd5395c0ddd28764a9fb4612d5e4", null ],
+    [ "m_assertionInfo", "class_catch_1_1_assertion_handler.html#ad171e8724bb771d97949b7270f400303", null ],
+    [ "m_completed", "class_catch_1_1_assertion_handler.html#a5a756818dff781c155e8eb970d1d4c68", null ],
+    [ "m_reaction", "class_catch_1_1_assertion_handler.html#a8203c08a43a3761b5f400ee6587fad55", null ],
+    [ "m_resultCapture", "class_catch_1_1_assertion_handler.html#aea5283ee36124ce5c51dc2a697b22a39", null ]
 ];

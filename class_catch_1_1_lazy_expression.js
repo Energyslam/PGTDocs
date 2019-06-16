@@ -7,5 +7,7 @@ var class_catch_1_1_lazy_expression =
     [ "AssertionHandler", "class_catch_1_1_lazy_expression.html#a4301a3aa57b612dd8b6ef8461742ecab", null ],
     [ "AssertionStats", "class_catch_1_1_lazy_expression.html#a64019eb137f5ce447cdc71cb80b6e7a4", null ],
     [ "operator<<", "class_catch_1_1_lazy_expression.html#aa01086581cab2fcd2d4580b8fa787dfc", null ],
-    [ "RunContext", "class_catch_1_1_lazy_expression.html#af3aa096bb29a772bc534830f29a2ce7a", null ]
+    [ "RunContext", "class_catch_1_1_lazy_expression.html#af3aa096bb29a772bc534830f29a2ce7a", null ],
+    [ "m_isNegated", "class_catch_1_1_lazy_expression.html#a975fdfe2bb139512024bb479d478425e", null ],
+    [ "m_transientExpression", "class_catch_1_1_lazy_expression.html#a5a9ce4c2401a262c21b4e107551180bc", null ]
 ];

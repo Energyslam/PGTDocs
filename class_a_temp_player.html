@@ -89,11 +89,17 @@ $(document).ready(function(){initNavTree('class_a_temp_player.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_temp_player-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ATempPlayer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class is used to create our player. Originally this was not planned to be our main player class hence the name.  
+ <a href="class_a_temp_player.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_temp_player_8h_source.html">TempPlayer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ATempPlayer:</div>
 <div class="dyncontent">
@@ -216,8 +222,51 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aceace2056147a31a0c6a90a3665a4971"><td class="memItemLeft" align="right" valign="top"><a id="aceace2056147a31a0c6a90a3665a4971"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginPlay</b> () override</td></tr>
 <tr class="separator:aceace2056147a31a0c6a90a3665a4971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a34ec2a63019e48c2b5a0c700d46054a2"><td class="memItemLeft" align="right" valign="top"><a id="a34ec2a63019e48c2b5a0c700d46054a2"></a>
+FVector&#160;</td><td class="memItemRight" valign="bottom"><b>oldPositionLength</b></td></tr>
+<tr class="separator:a34ec2a63019e48c2b5a0c700d46054a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26c40b56eba2853f8575caea3901526"><td class="memItemLeft" align="right" valign="top"><a id="aa26c40b56eba2853f8575caea3901526"></a>
+FVector&#160;</td><td class="memItemRight" valign="bottom"><b>newPositionLength</b></td></tr>
+<tr class="separator:aa26c40b56eba2853f8575caea3901526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae98768fa1763fbed1143e0fb677e6cb0"><td class="memItemLeft" align="right" valign="top"><a id="ae98768fa1763fbed1143e0fb677e6cb0"></a>
+FVector&#160;</td><td class="memItemRight" valign="bottom"><b>newVelocity</b></td></tr>
+<tr class="separator:ae98768fa1763fbed1143e0fb677e6cb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae536d0f02464b143b30834b4119a0e5d"><td class="memItemLeft" align="right" valign="top"><a id="ae536d0f02464b143b30834b4119a0e5d"></a>
+UWorld *&#160;</td><td class="memItemRight" valign="bottom"><b>World</b></td></tr>
+<tr class="separator:ae536d0f02464b143b30834b4119a0e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1cf056dda8db7ee2f9bde1b75677e1f"><td class="memItemLeft" align="right" valign="top"><a id="ab1cf056dda8db7ee2f9bde1b75677e1f"></a>
+FTimerHandle&#160;</td><td class="memItemRight" valign="bottom"><b>timerHandler</b></td></tr>
+<tr class="separator:ab1cf056dda8db7ee2f9bde1b75677e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994ab9d5d3238e0a922dcfd7193d8a99"><td class="memItemLeft" align="right" valign="top"><a id="a994ab9d5d3238e0a922dcfd7193d8a99"></a>
+FTimerHandle&#160;</td><td class="memItemRight" valign="bottom"><b>fieldOfViewHandler</b></td></tr>
+<tr class="separator:a994ab9d5d3238e0a922dcfd7193d8a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a12cac96230dcb343532df3f9a1f85"><td class="memItemLeft" align="right" valign="top"><a id="ad4a12cac96230dcb343532df3f9a1f85"></a>
+FTimerHandle&#160;</td><td class="memItemRight" valign="bottom"><b>deathDelayHandler</b></td></tr>
+<tr class="separator:ad4a12cac96230dcb343532df3f9a1f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1681ff1796de82198e0397b9e4d0b20"><td class="memItemLeft" align="right" valign="top"><a id="ae1681ff1796de82198e0397b9e4d0b20"></a>
+FVector&#160;</td><td class="memItemRight" valign="bottom"><b>currentPivot</b></td></tr>
+<tr class="separator:ae1681ff1796de82198e0397b9e4d0b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a929e36a28e98591905a53ba134784bfb"><td class="memItemLeft" align="right" valign="top"><a id="a929e36a28e98591905a53ba134784bfb"></a>
+TArray&lt; FVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>trackPivots</b></td></tr>
+<tr class="separator:a929e36a28e98591905a53ba134784bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aada8bcfd17645ea16975dfaa626928df"><td class="memItemLeft" align="right" valign="top"><a id="aada8bcfd17645ea16975dfaa626928df"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>pivotIndex</b> = 5</td></tr>
+<tr class="separator:aada8bcfd17645ea16975dfaa626928df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cf5861fcf8e13de1441c87851aacc9c"><td class="memItemLeft" align="right" valign="top"><a id="a0cf5861fcf8e13de1441c87851aacc9c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>snowballCollision</b> = false</td></tr>
+<tr class="separator:a0cf5861fcf8e13de1441c87851aacc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is used to create our player. Originally this was not planned to be our main player class hence the name. </p>
+<p>Our player manually created in C++. It uses a static mesh that is assigned in the editor for our penguin model. The player utilizes a scene component with absolute rotation to attach our springarm and camera to. This is done because the player rotates heavily during camera which causes the camera to spin if it is not set to absolute rotation. A sphere component is used to draw a snowball over the penguin, as our penguin is stuck in a snowball and rolling down the track. The player needs a pointer to the class TrackGeneratorBezier to retrieve the position of the last vertice of the track to determine whether the player has died or not, and to set the initial position of the player. It also needs an include of the CollisionCameraShake class in order to create a shaky effects once the player has collision with a snowball. This class handles the movement of the player and the camera, as well as calling the function in the UI to move the player from game screen to the game over screen.</p>
+<dl class="section author"><dt>Author</dt><dd>Max Groen </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>09/06/2019 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Energyslam™ </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4ce5eb1c6c1618d52cb6c45c4175e4a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ce5eb1c6c1618d52cb6c45c4175e4a7">&#9670;&nbsp;</a></span>ATempPlayer()</h2>
 

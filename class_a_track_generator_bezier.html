@@ -89,11 +89,17 @@ $(document).ready(function(){initNavTree('class_a_track_generator_bezier.html','
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_a_track_generator_bezier-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ATrackGeneratorBezier Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class takes care of the procedurally generated track mesh.  
+ <a href="class_a_track_generator_bezier.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_track_generator_bezier_8h_source.html">TrackGeneratorBezier.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for ATrackGeneratorBezier:</div>
 <div class="dyncontent">
@@ -201,8 +207,52 @@ class UParticleSystem *&#160;</td><td class="memItemRight" valign="bottom"><b>wa
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a79c2361e336c86302c2c895ed05022d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_track_generator_bezier.html#a79c2361e336c86302c2c895ed05022d4">BeginPlay</a> () override</td></tr>
 <tr class="separator:a79c2361e336c86302c2c895ed05022d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a6e4b8e8d24a05e7d3c44c0121c51750d"><td class="memItemLeft" align="right" valign="top"><a id="a6e4b8e8d24a05e7d3c44c0121c51750d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_track_generator_bezier.html#a6e4b8e8d24a05e7d3c44c0121c51750d">endingVertsInitialized</a></td></tr>
+<tr class="memdesc:a6e4b8e8d24a05e7d3c44c0121c51750d"><td class="mdescLeft">&#160;</td><td class="mdescRight">\Determines whether endingVerts array is initialized <br /></td></tr>
+<tr class="separator:a6e4b8e8d24a05e7d3c44c0121c51750d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c557cfc714f3aef322da361ab479695"><td class="memItemLeft" align="right" valign="top"><a id="a6c557cfc714f3aef322da361ab479695"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>spawnPositionInitialized</b> = false</td></tr>
+<tr class="separator:a6c557cfc714f3aef322da361ab479695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c784eb1bf93f84a07b9b7c559799da1"><td class="memItemLeft" align="right" valign="top"><a id="a1c784eb1bf93f84a07b9b7c559799da1"></a>
+UProceduralMeshComponent *&#160;</td><td class="memItemRight" valign="bottom"><b>mesh</b></td></tr>
+<tr class="separator:a1c784eb1bf93f84a07b9b7c559799da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1aa7a4a58019a5f36839d09535a88e85"><td class="memItemLeft" align="right" valign="top"><a id="a1aa7a4a58019a5f36839d09535a88e85"></a>
+UProceduralMeshComponent *&#160;</td><td class="memItemRight" valign="bottom"><b>speedBoost</b></td></tr>
+<tr class="separator:a1aa7a4a58019a5f36839d09535a88e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e978129beb8f966fc40647fb55cf66d"><td class="memItemLeft" align="right" valign="top"><a id="a3e978129beb8f966fc40647fb55cf66d"></a>
+FVector&#160;</td><td class="memItemRight" valign="bottom"><b>trackScale</b></td></tr>
+<tr class="separator:a3e978129beb8f966fc40647fb55cf66d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797cd696c8a263c437ffcd40e186a783"><td class="memItemLeft" align="right" valign="top"><a id="a797cd696c8a263c437ffcd40e186a783"></a>
+TArray&lt; FVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_track_generator_bezier.html#a797cd696c8a263c437ffcd40e186a783">endingVerts</a></td></tr>
+<tr class="memdesc:a797cd696c8a263c437ffcd40e186a783"><td class="mdescLeft">&#160;</td><td class="mdescRight">\Holds ending vertices of most recently spawned mesh section <br /></td></tr>
+<tr class="separator:a797cd696c8a263c437ffcd40e186a783"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7965346651a1d7c1cfbf1d4b044be0c9"><td class="memItemLeft" align="right" valign="top"><a id="a7965346651a1d7c1cfbf1d4b044be0c9"></a>
+FTimerHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_track_generator_bezier.html#a7965346651a1d7c1cfbf1d4b044be0c9">timehandle</a></td></tr>
+<tr class="memdesc:a7965346651a1d7c1cfbf1d4b044be0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">\Handle to manage the timer <br /></td></tr>
+<tr class="separator:a7965346651a1d7c1cfbf1d4b044be0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class takes care of the procedurally generated track mesh. </p>
+<p>For the generation of the track, Unreal Engines ProceduralMeshComponent is used. This component makes it possible to create a procedurally generated mesh. To calculate the shape of the mesh, we use an algorithm to calculate the points on a cubic Bezier curve. This way, the track wil be curvy and interesting for the player while also ensuring that the generated curve looks natural, like a river. This algorithm is also used to create the half pipe shape of the mesh.</p>
+<p>The track is composed out of several sections. When the game starts, 4 of these mesh sections are created which all fit to one another. The process of creating these mesh sections is as follows:</p>
+<p>The following steps are taken to create each mesh section:</p><ul>
+<li>Four random positioned nodes are taken for each mesh section, used to calculate the curve of the mesh section</li>
+<li>The last node is equal to the first node of following mesh section to make sure the mesh sections connect</li>
+<li>The vertices and the triangles are calculated, and based on the result, the mesh will be rendered</li>
+<li>The vertex normals are calculating by normalizing the difference between the vertices and the origin</li>
+<li>The uv's are calculated to be able to use a material on the track</li>
+<li>Mesh will be rendered</li>
+</ul>
+<p>When the player has reached a certain position on the track, the mesh section on the back will be placed to the front to prevent the mesh from getting infinitely long. This prevents unnecessary calculations and unnecessary rendering.</p>
+<p>This generator is also used to create snowballs, speedboosts and power-ups as they rely on the positions of the vertices. This is done by giving the vertice array to the appropriate method in their respective classes.</p>
+<p><b>Note: This script should be placed in the scene for the track to be able to spawn.</b> </p><dl class="section author"><dt>Author</dt><dd>Max Groen &amp; Lisa Groen </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>09/06/2019 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a1a0bcd8948e1a9762e3ffaa931daf5fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1a0bcd8948e1a9762e3ffaa931daf5fc">&#9670;&nbsp;</a></span>ATrackGeneratorBezier()</h2>
 

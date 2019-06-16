@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['resetfieldofview',['ResetFieldOfView',['../class_a_temp_player.html#acdf7ec422b79ce05771bdb87c2e8a14f',1,'ATempPlayer']]],
-  ['resetscoremultiplier',['ResetScoreMultiplier',['../class_a_user_interface_manager.html#ad0145ad451603ce045b9665fdadf5be4',1,'AUserInterfaceManager']]]
+  ['oncompoverlap',['OnCompOverlap',['../class_a_interactable.html#a5d0480a668323ff7cf08a2ae1d2c813d',1,'AInteractable::OnCompOverlap()'],['../class_a_snowball.html#a6cf76f3208f159a0286c1bde49d14f80',1,'ASnowball::OnCompOverlap()']]],
+  ['ondeath',['OnDeath',['../class_a_snowball.html#abdd53cf202d12fc2c5f120c9c23d77d5',1,'ASnowball::OnDeath()'],['../class_a_temp_player.html#aee1e2803664bcd04a5e91d6137b5eedc',1,'ATempPlayer::OnDeath()']]]
 ];

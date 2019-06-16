@@ -21,6 +21,7 @@ var searchData=
   ['is_5frange',['is_range',['../struct_catch_1_1is__range.html',1,'Catch']]],
   ['is_5funique',['is_unique',['../struct_catch_1_1is__unique.html',1,'Catch']]],
   ['is_5funique_3c_20t0_2c_20t1_2c_20rest_2e_2e_2e_20_3e',['is_unique&lt; T0, T1, Rest... &gt;',['../struct_catch_1_1is__unique_3_01_t0_00_01_t1_00_01_rest_8_8_8_01_4.html',1,'Catch']]],
+  ['isspeedup',['isSpeedUp',['../class_a_speed_boost_generator.html#a9c7a21f638a974eeb55e1cc3b69acd1e',1,'ASpeedBoostGenerator']]],
   ['isstreaminsertable',['IsStreamInsertable',['../class_catch_1_1_detail_1_1_is_stream_insertable.html',1,'Catch::Detail']]],
   ['istream',['IStream',['../struct_catch_1_1_i_stream.html',1,'Catch']]],
   ['itestcaseregistry',['ITestCaseRegistry',['../struct_catch_1_1_i_test_case_registry.html',1,'Catch']]],

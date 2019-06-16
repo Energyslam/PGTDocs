@@ -11,5 +11,6 @@ var class_catch_1_1_expr_lhs =
     [ "operator<=", "class_catch_1_1_expr_lhs.html#a918090c28bee54222730159b56240af1", null ],
     [ "operator==", "class_catch_1_1_expr_lhs.html#af218aaf7b5b0a0ebb6b3697f2c89893d", null ],
     [ "operator==", "class_catch_1_1_expr_lhs.html#ab707a84abdffbdc35962a495e238d393", null ],
-    [ "operator||", "class_catch_1_1_expr_lhs.html#ae9b4ee923b90af22c9e39261c2f03cd3", null ]
+    [ "operator||", "class_catch_1_1_expr_lhs.html#ae9b4ee923b90af22c9e39261c2f03cd3", null ],
+    [ "m_lhs", "class_catch_1_1_expr_lhs.html#af290873a8427ccbdae6acb915fb7366a", null ]
 ];

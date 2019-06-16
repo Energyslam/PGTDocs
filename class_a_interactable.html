@@ -90,11 +90,17 @@ $(document).ready(function(){initNavTree('class_a_interactable.html','');});
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_a_interactable-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">AInteractable Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class is used for the interactables in the game, namely the power-ups.  
+ <a href="class_a_interactable.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_interactable_8h_source.html">Interactable.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AInteractable:</div>
 <div class="dyncontent">
@@ -145,8 +151,20 @@ FString&#160;</td><td class="memItemRight" valign="bottom"><b>warning</b></td></
 <tr class="memitem:a52d9ed98781301df4b341802e2356bea"><td class="memItemLeft" align="right" valign="top"><a id="a52d9ed98781301df4b341802e2356bea"></a>
 FColor&#160;</td><td class="memItemRight" valign="bottom"><b>warningColor</b></td></tr>
 <tr class="separator:a52d9ed98781301df4b341802e2356bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a5d0480a668323ff7cf08a2ae1d2c813d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_interactable.html#a5d0480a668323ff7cf08a2ae1d2c813d">OnCompOverlap</a> (class UPrimitiveComponent *ThisComp, AActor *OtherActor, class UPrimitiveComponent *OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &amp;SweepResult)</td></tr>
+<tr class="separator:a5d0480a668323ff7cf08a2ae1d2c813d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This class is used for the interactables in the game, namely the power-ups. </p>
+<p>The interactables in the game right now is the power-up. The power-up has two seperate particle system, one to indicate to the player that there is something special about it, and one that plays once the player has picked it up to give some juice to the game. This makes it feel more impactful than simply picking it up. This class is derived from a blueprint. This blueprint holds the static mesh that the interactable has, which is a standard sphere with a material. It creates and attaches the particle system during runtime.</p>
+<dl class="section author"><dt>Author</dt><dd>Max Groen </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>15/05/2019 </dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Energyslam™ </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad90cf570632e0d6b1955cd7e696938bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad90cf570632e0d6b1955cd7e696938bf">&#9670;&nbsp;</a></span>AInteractable()</h2>
 
@@ -168,6 +186,68 @@ FColor&#160;</td><td class="memItemRight" valign="bottom"><b>warningColor</b></t
 <p>&lt; tells the engine that this object has an overlap event</p>
 <p>uses the constructorhelpers to find the particles system needed in the content browser</p>
 <p>&lt; only if it has succesfully found the particle system, will it try to use the object attached to it </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a5d0480a668323ff7cf08a2ae1d2c813d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0480a668323ff7cf08a2ae1d2c813d">&#9670;&nbsp;</a></span>OnCompOverlap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AInteractable::OnCompOverlap </td>
+          <td>(</td>
+          <td class="paramtype">class UPrimitiveComponent *&#160;</td>
+          <td class="paramname"><em>ThisComp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AActor *&#160;</td>
+          <td class="paramname"><em>OtherActor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">class UPrimitiveComponent *&#160;</td>
+          <td class="paramname"><em>OtherComp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32&#160;</td>
+          <td class="paramname"><em>OtherBodyIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bFromSweep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FHitResult &amp;&#160;</td>
+          <td class="paramname"><em>SweepResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>&lt; Resolve collision is implemented in the class powerup. It is simply a function that starts a timer to destroy itself in 1 second. </p>
 
 </div>
 </div>

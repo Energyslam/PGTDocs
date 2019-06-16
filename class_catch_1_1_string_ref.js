@@ -11,6 +11,8 @@ var class_catch_1_1_string_ref =
     [ "c_str", "class_catch_1_1_string_ref.html#a1669cb2765e820ca258159676cbd82a5", null ],
     [ "currentData", "class_catch_1_1_string_ref.html#aee240387305ca8b249169d79f36e7002", null ],
     [ "empty", "class_catch_1_1_string_ref.html#ac6b68b9dc1e1dec69e884e3f7be581bd", null ],
+    [ "isOwned", "class_catch_1_1_string_ref.html#a911d426c9a979736da4bf44bec2b174c", null ],
+    [ "isSubstring", "class_catch_1_1_string_ref.html#adee880a214907e6a5ad64141b15f409a", null ],
     [ "numberOfCharacters", "class_catch_1_1_string_ref.html#a6a6cac7430e626ffdd7550a081e8168f", null ],
     [ "operator !=", "class_catch_1_1_string_ref.html#afbd4abd62af0fc1a35697cbb91415fc6", null ],
     [ "operator std::string", "class_catch_1_1_string_ref.html#ad9fde21785affacc32d7da7a70d74e93", null ],
@@ -20,5 +22,10 @@ var class_catch_1_1_string_ref =
     [ "size", "class_catch_1_1_string_ref.html#ae084d72cb2952cee61a63ef36611d0ad", null ],
     [ "substr", "class_catch_1_1_string_ref.html#a248568b467cf6599320903ae613c8eee", null ],
     [ "swap", "class_catch_1_1_string_ref.html#a8a843e39ad3560d10a80524ed926ed63", null ],
-    [ "StringRefTestAccess", "class_catch_1_1_string_ref.html#a420e64e1652de1b0d427775781b018f5", null ]
+    [ "takeOwnership", "class_catch_1_1_string_ref.html#aa2723bb1d9355202209993142534d3d6", null ],
+    [ "StringRefTestAccess", "class_catch_1_1_string_ref.html#a420e64e1652de1b0d427775781b018f5", null ],
+    [ "m_data", "class_catch_1_1_string_ref.html#ae671eabbedd386aeb334d3da1a904ba5", null ],
+    [ "m_size", "class_catch_1_1_string_ref.html#a91ee253f5b7e43303352186139845753", null ],
+    [ "m_start", "class_catch_1_1_string_ref.html#a0583d4e5ea88c99c121504052a4fcb6c", null ],
+    [ "s_empty", "class_catch_1_1_string_ref.html#a38d077e89f7f2ce666507ab28dd28653", null ]
 ];

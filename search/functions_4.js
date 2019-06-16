@@ -1,6 +1,8 @@
 var searchData=
 [
   ['gameover',['GameOver',['../class_a_user_interface_manager.html#aa77f6ee265e9eb803e587e124242e545',1,'AUserInterfaceManager']]],
+  ['generateramp',['GenerateRamp',['../class_a_speed_boost_generator.html#a1e4d4f7b23b18e0696f680e50d182080',1,'ASpeedBoostGenerator']]],
+  ['generatespeedboost',['GenerateSpeedBoost',['../class_a_speed_boost_generator.html#ab97b89474741da3978be945c305cf5f5',1,'ASpeedBoostGenerator']]],
   ['getcurrentscore',['GetCurrentScore',['../class_a_user_interface_manager.html#a1fd0354c446579ba0a7fdc7cc0fd520f',1,'AUserInterfaceManager']]],
   ['getcurrentspeed',['GetCurrentSpeed',['../class_a_temp_player.html#abab7604d240b01a6b4643d4ab1715acd',1,'ATempPlayer::GetCurrentSpeed()'],['../class_a_user_interface_manager.html#ab204b19e791bb6df7513e7cd72fe712a',1,'AUserInterfaceManager::GetCurrentSpeed()']]],
   ['getendingverts',['GetEndingVerts',['../class_a_track_generator_bezier.html#ab3623ddd81be538a80c1c6356c0a1740',1,'ATrackGeneratorBezier']]],
@@ -11,5 +13,6 @@ var searchData=
   ['getplayerspawnposition',['GetPlayerSpawnPosition',['../class_a_track_generator_bezier.html#a383bbfd04a3daeb4afbeb54d76504890',1,'ATrackGeneratorBezier']]],
   ['getscoremultiplier',['GetScoreMultiplier',['../class_a_user_interface_manager.html#ae8fbb5d467e403f4f8e6a871c77a2a97',1,'AUserInterfaceManager']]],
   ['getsecondsleft',['GetSecondsLeft',['../class_a_user_interface_manager.html#ab66c9bb0fe8cdf1521d072d32b1db1ce',1,'AUserInterfaceManager']]],
-  ['gettopxhighscores',['GetTopXHighScores',['../class_a_user_interface_manager.html#a10887916bdb9f032b3e9b0782a2326a5',1,'AUserInterfaceManager']]]
+  ['gettopxhighscores',['GetTopXHighScores',['../class_a_user_interface_manager.html#a10887916bdb9f032b3e9b0782a2326a5',1,'AUserInterfaceManager']]],
+  ['getvertices',['GetVertices',['../class_a_spawnable_object.html#a61207dbb5413abbad589966bc3913edc',1,'ASpawnableObject']]]
 ];

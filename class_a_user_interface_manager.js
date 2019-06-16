@@ -19,5 +19,21 @@ var class_a_user_interface_manager =
     [ "SetHighscores", "class_a_user_interface_manager.html#a7d590e3c68674c78cce8f0af9a787504", null ],
     [ "SetScoreMultiplierTo", "class_a_user_interface_manager.html#a92bafd4cd76cc242921860d784799bd3", null ],
     [ "StartPlaying", "class_a_user_interface_manager.html#a6a4122a2113d920c0e38588059a68839", null ],
-    [ "Tick", "class_a_user_interface_manager.html#a37044120f159092a04b598a4f4b83643", null ]
+    [ "Tick", "class_a_user_interface_manager.html#a37044120f159092a04b598a4f4b83643", null ],
+    [ "averageSpeed", "class_a_user_interface_manager.html#a15dcc4b8103484d37051511adbdf0632", null ],
+    [ "countdownTimer", "class_a_user_interface_manager.html#ae6429246e4da07d706f496f9f72348d0", null ],
+    [ "currentScore", "class_a_user_interface_manager.html#ae275c2952451e5ea11abc70eb49e343e", null ],
+    [ "highScoreAccessor", "class_a_user_interface_manager.html#a6e0c943fbdddffdf31851316cb37003a", null ],
+    [ "highScoresIntArray", "class_a_user_interface_manager.html#a5a59e4b6816d8487506e135d6ab58e9d", null ],
+    [ "highScoresStringArray", "class_a_user_interface_manager.html#a7734553d624d2b332b2ded0813d43488", null ],
+    [ "lastScore", "class_a_user_interface_manager.html#a05d560148bb08bcc3d36fcdc645c3ad6", null ],
+    [ "penguinSlideGameInstance", "class_a_user_interface_manager.html#a1344dc13cd2ec0cb435de5bb4fdaaae0", null ],
+    [ "scoreMultiplier", "class_a_user_interface_manager.html#ae020a4d6ae4e0275b87e07f1001b6d19", null ],
+    [ "secondsLeft", "class_a_user_interface_manager.html#a7425c749c15db93ba99c9c5a11299f8b", null ],
+    [ "speedScoreMultiplier", "class_a_user_interface_manager.html#a18f16c2da42be8df2e22e1fe340eb526", null ],
+    [ "startSequenceTimer", "class_a_user_interface_manager.html#ae50c63146d1b7a9b1f36a83ecec61882", null ],
+    [ "TextFileString", "class_a_user_interface_manager.html#ae3e87aae747b7f525960a2b9e20f7a0b", null ],
+    [ "timerHandler", "class_a_user_interface_manager.html#ae5be8f5675d666a92f1db61f2179d798", null ],
+    [ "timeToWait", "class_a_user_interface_manager.html#a918923fd6b4045dc865093346d6c1bee", null ],
+    [ "topXHighScores", "class_a_user_interface_manager.html#a5d65eaac6630841ca0d92d42b28db560", null ]
 ];

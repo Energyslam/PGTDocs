@@ -89,6 +89,7 @@ $(document).ready(function(){initNavTree('class_a_snowball.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="class_a_snowball-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ASnowball Class Reference</div>  </div>
@@ -110,52 +111,64 @@ Inheritance diagram for ASnowball:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a51e944d6eae2e6c4ff61087b4932988e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a51e944d6eae2e6c4ff61087b4932988e">ASnowball</a> ()</td></tr>
 <tr class="separator:a51e944d6eae2e6c4ff61087b4932988e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa413616dcb4fdff34ab8c543f6bca7fe"><td class="memItemLeft" align="right" valign="top"><a id="aa413616dcb4fdff34ab8c543f6bca7fe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPositions</b> (TArray&lt; FVector &gt; lerpPos, float offset)</td></tr>
+<tr class="memitem:aa413616dcb4fdff34ab8c543f6bca7fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#aa413616dcb4fdff34ab8c543f6bca7fe">SetPositions</a> (TArray&lt; FVector &gt; lerpPos, float offset)</td></tr>
+<tr class="memdesc:aa413616dcb4fdff34ab8c543f6bca7fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the positions for the bezier curve  <a href="#aa413616dcb4fdff34ab8c543f6bca7fe">More...</a><br /></td></tr>
 <tr class="separator:aa413616dcb4fdff34ab8c543f6bca7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdd53cf202d12fc2c5f120c9c23d77d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#abdd53cf202d12fc2c5f120c9c23d77d5">OnDeath</a> ()</td></tr>
-<tr class="memdesc:abdd53cf202d12fc2c5f120c9c23d77d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">calls the player ondeath function  <a href="#abdd53cf202d12fc2c5f120c9c23d77d5">More...</a><br /></td></tr>
+<tr class="memdesc:abdd53cf202d12fc2c5f120c9c23d77d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">function to handle player death  <a href="#abdd53cf202d12fc2c5f120c9c23d77d5">More...</a><br /></td></tr>
 <tr class="separator:abdd53cf202d12fc2c5f120c9c23d77d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64d038ba27c2390cbd101505690a8e51"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a64d038ba27c2390cbd101505690a8e51">Tick</a> (float DeltaTime) override</td></tr>
 <tr class="separator:a64d038ba27c2390cbd101505690a8e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a16a3fecfe246087a14c621092e812d11"><td class="memItemLeft" align="right" valign="top"><a id="a16a3fecfe246087a14c621092e812d11"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a16a3fecfe246087a14c621092e812d11">amazingTimer</a></td></tr>
+<tr class="memdesc:a16a3fecfe246087a14c621092e812d11"><td class="mdescLeft">&#160;</td><td class="mdescRight">manual timer so the snowball does not keep triggering sound when it has a collision with the player <br /></td></tr>
+<tr class="separator:a16a3fecfe246087a14c621092e812d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e89eae31283444d4457461c3ae2e8c"><td class="memItemLeft" align="right" valign="top"><a id="a22e89eae31283444d4457461c3ae2e8c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a22e89eae31283444d4457461c3ae2e8c">lerpValue</a></td></tr>
+<tr class="memdesc:a22e89eae31283444d4457461c3ae2e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">the position of the curve it is currently at between 0 and 1 <br /></td></tr>
+<tr class="separator:a22e89eae31283444d4457461c3ae2e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2972be36f79b5aa639ef1551631a3eb5"><td class="memItemLeft" align="right" valign="top"><a id="a2972be36f79b5aa639ef1551631a3eb5"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a2972be36f79b5aa639ef1551631a3eb5">speedValue</a></td></tr>
+<tr class="memdesc:a2972be36f79b5aa639ef1551631a3eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">float for the speed at which the snowball lerps <br /></td></tr>
+<tr class="separator:a2972be36f79b5aa639ef1551631a3eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366ca9a320d78e67099b6834bc91d1dd"><td class="memItemLeft" align="right" valign="top"><a id="a366ca9a320d78e67099b6834bc91d1dd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a366ca9a320d78e67099b6834bc91d1dd">countingDown</a></td></tr>
+<tr class="memdesc:a366ca9a320d78e67099b6834bc91d1dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">bool keeping track of whether the snowball is moving up or down (between 0 and 1) <br /></td></tr>
+<tr class="separator:a366ca9a320d78e67099b6834bc91d1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236659ceac62b50917dd468a8c0f0bf6"><td class="memItemLeft" align="right" valign="top"><a id="a236659ceac62b50917dd468a8c0f0bf6"></a>
+TArray&lt; FVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a236659ceac62b50917dd468a8c0f0bf6">lerpPositions</a></td></tr>
+<tr class="memdesc:a236659ceac62b50917dd468a8c0f0bf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">positions which the snowball moves between <br /></td></tr>
+<tr class="separator:a236659ceac62b50917dd468a8c0f0bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6aabbbfa810bcbceb4638a7af111f2a"><td class="memItemLeft" align="right" valign="top"><a id="aa6aabbbfa810bcbceb4638a7af111f2a"></a>
+UMaterial *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#aa6aabbbfa810bcbceb4638a7af111f2a">StoredMaterial</a></td></tr>
+<tr class="memdesc:aa6aabbbfa810bcbceb4638a7af111f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary stored material pointer used for the constructor helper. <br /></td></tr>
+<tr class="separator:aa6aabbbfa810bcbceb4638a7af111f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83b9cb77a35dc0279e100389eb24a792"><td class="memItemLeft" align="right" valign="top"><a id="a83b9cb77a35dc0279e100389eb24a792"></a>
-class UStaticMeshComponent *&#160;</td><td class="memItemRight" valign="bottom"><b>sphereVisual</b></td></tr>
+class UStaticMeshComponent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a83b9cb77a35dc0279e100389eb24a792">sphereVisual</a></td></tr>
+<tr class="memdesc:a83b9cb77a35dc0279e100389eb24a792"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to static mesh component of the actor <br /></td></tr>
 <tr class="separator:a83b9cb77a35dc0279e100389eb24a792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24f97662faf4c907e876c1af9fea492d"><td class="memItemLeft" align="right" valign="top"><a id="a24f97662faf4c907e876c1af9fea492d"></a>
-class USphereComponent *&#160;</td><td class="memItemRight" valign="bottom"><b>sphereComponent</b></td></tr>
+class USphereComponent *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a24f97662faf4c907e876c1af9fea492d">sphereComponent</a></td></tr>
+<tr class="memdesc:a24f97662faf4c907e876c1af9fea492d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sphere used for its collision box. <br /></td></tr>
 <tr class="separator:a24f97662faf4c907e876c1af9fea492d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a236659ceac62b50917dd468a8c0f0bf6"><td class="memItemLeft" align="right" valign="top"><a id="a236659ceac62b50917dd468a8c0f0bf6"></a>
-TArray&lt; FVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lerpPositions</b></td></tr>
-<tr class="separator:a236659ceac62b50917dd468a8c0f0bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22e89eae31283444d4457461c3ae2e8c"><td class="memItemLeft" align="right" valign="top"><a id="a22e89eae31283444d4457461c3ae2e8c"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>lerpValue</b></td></tr>
-<tr class="separator:a22e89eae31283444d4457461c3ae2e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a366ca9a320d78e67099b6834bc91d1dd"><td class="memItemLeft" align="right" valign="top"><a id="a366ca9a320d78e67099b6834bc91d1dd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>countingDown</b></td></tr>
-<tr class="separator:a366ca9a320d78e67099b6834bc91d1dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2972be36f79b5aa639ef1551631a3eb5"><td class="memItemLeft" align="right" valign="top"><a id="a2972be36f79b5aa639ef1551631a3eb5"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>speedValue</b></td></tr>
-<tr class="separator:a2972be36f79b5aa639ef1551631a3eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16a3fecfe246087a14c621092e812d11"><td class="memItemLeft" align="right" valign="top"><a id="a16a3fecfe246087a14c621092e812d11"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>amazingTimer</b></td></tr>
-<tr class="separator:a16a3fecfe246087a14c621092e812d11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f9dacedd71e1f1170ba93a0552ae65c"><td class="memItemLeft" align="right" valign="top"><a id="a9f9dacedd71e1f1170ba93a0552ae65c"></a>
-class <a class="el" href="class_a_sound_manager.html">ASoundManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>soundManager</b></td></tr>
+class <a class="el" href="class_a_sound_manager.html">ASoundManager</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a9f9dacedd71e1f1170ba93a0552ae65c">soundManager</a></td></tr>
+<tr class="memdesc:a9f9dacedd71e1f1170ba93a0552ae65c"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointer to the soundmanager so it can play sound on collision <br /></td></tr>
 <tr class="separator:a9f9dacedd71e1f1170ba93a0552ae65c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6aabbbfa810bcbceb4638a7af111f2a"><td class="memItemLeft" align="right" valign="top"><a id="aa6aabbbfa810bcbceb4638a7af111f2a"></a>
-UMaterial *&#160;</td><td class="memItemRight" valign="bottom"><b>StoredMaterial</b></td></tr>
-<tr class="separator:aa6aabbbfa810bcbceb4638a7af111f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95476c785f8b1e39ff9556598df18199"><td class="memItemLeft" align="right" valign="top"><a id="a95476c785f8b1e39ff9556598df18199"></a>
-UMaterialInstanceDynamic *&#160;</td><td class="memItemRight" valign="bottom"><b>DynamicMaterialInst</b></td></tr>
-<tr class="separator:a95476c785f8b1e39ff9556598df18199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a760c05ce68090af79cb18cf354c2476c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a760c05ce68090af79cb18cf354c2476c">BeginPlay</a> () override</td></tr>
 <tr class="separator:a760c05ce68090af79cb18cf354c2476c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a6cf76f3208f159a0286c1bde49d14f80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_snowball.html#a6cf76f3208f159a0286c1bde49d14f80">OnCompOverlap</a> (class UPrimitiveComponent *ThisComp, AActor *OtherActor, class UPrimitiveComponent *OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult &amp;SweepResult)</td></tr>
+<tr class="memdesc:a6cf76f3208f159a0286c1bde49d14f80"><td class="mdescLeft">&#160;</td><td class="mdescRight">handles the collision events of the snowball by using the unreal function OnCompOverlap that is a part of AActor.  <a href="#a6cf76f3208f159a0286c1bde49d14f80">More...</a><br /></td></tr>
+<tr class="separator:a6cf76f3208f159a0286c1bde49d14f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is used to handle the snowball movement and collision with the player. </p>
@@ -211,6 +224,68 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6cf76f3208f159a0286c1bde49d14f80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cf76f3208f159a0286c1bde49d14f80">&#9670;&nbsp;</a></span>OnCompOverlap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ASnowball::OnCompOverlap </td>
+          <td>(</td>
+          <td class="paramtype">class UPrimitiveComponent *&#160;</td>
+          <td class="paramname"><em>ThisComp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">AActor *&#160;</td>
+          <td class="paramname"><em>OtherActor</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">class UPrimitiveComponent *&#160;</td>
+          <td class="paramname"><em>OtherComp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32&#160;</td>
+          <td class="paramname"><em>OtherBodyIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bFromSweep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const FHitResult &amp;&#160;</td>
+          <td class="paramname"><em>SweepResult</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>handles the collision events of the snowball by using the unreal function OnCompOverlap that is a part of AActor. </p>
+
+</div>
+</div>
 <a id="abdd53cf202d12fc2c5f120c9c23d77d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abdd53cf202d12fc2c5f120c9c23d77d5">&#9670;&nbsp;</a></span>OnDeath()</h2>
 
@@ -226,7 +301,39 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>calls the player ondeath function </p>
+<p>function to handle player death </p>
+<p>calls the player ondeath function</p>
+
+</div>
+</div>
+<a id="aa413616dcb4fdff34ab8c543f6bca7fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa413616dcb4fdff34ab8c543f6bca7fe">&#9670;&nbsp;</a></span>SetPositions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ASnowball::SetPositions </td>
+          <td>(</td>
+          <td class="paramtype">TArray&lt; FVector &gt;&#160;</td>
+          <td class="paramname"><em>positions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>zOffset</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initializes the positions for the bezier curve </p>
+<p>Sets the positions of the nodes that the snowball will create a bezier curve from and lerp between. </p>
 
 </div>
 </div>

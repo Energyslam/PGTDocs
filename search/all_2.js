@@ -2,6 +2,8 @@ var searchData=
 [
   ['calculatearclengthx',['CalculateArcLengthX',['../class_a_track_generator_bezier.html#afc717555960f90812874306371f2f316',1,'ATrackGeneratorBezier']]],
   ['calculatearclengthy',['CalculateArcLengthY',['../class_a_track_generator_bezier.html#a8f525f68b49a3f4feffdb2982af838ea',1,'ATrackGeneratorBezier']]],
+  ['calculatenormal',['CalculateNormal',['../class_a_speed_boost_generator.html#a21b292aaeeeb490dfc88f8fabda3530b',1,'ASpeedBoostGenerator']]],
+  ['calculatespeedboostvertices',['CalculateSpeedboostVertices',['../class_a_speed_boost_generator.html#a58aad86e24d45a333e78cd8f24256b66',1,'ASpeedBoostGenerator']]],
   ['camera',['camera',['../class_a_temp_player.html#a087ae8167b171f1f62c892cc1fcccaf0',1,'ATempPlayer']]],
   ['camerashake',['CameraShake',['../class_a_temp_player.html#a49cbf48c04c0afabf76a56ad1466a5c2',1,'ATempPlayer']]],
   ['capturer',['Capturer',['../class_catch_1_1_capturer.html',1,'Catch']]],
@@ -15,9 +17,11 @@ var searchData=
   ['containsmatcher',['ContainsMatcher',['../struct_catch_1_1_matchers_1_1_vector_1_1_contains_matcher.html',1,'Catch::Matchers::Vector::ContainsMatcher&lt; T &gt;'],['../struct_catch_1_1_matchers_1_1_std_string_1_1_contains_matcher.html',1,'Catch::Matchers::StdString::ContainsMatcher']]],
   ['convertandsorthighscorearray',['ConvertAndSortHighScoreArray',['../class_a_user_interface_manager.html#af1a58dc6b34721339b356b53efb54e45',1,'AUserInterfaceManager']]],
   ['countdown',['Countdown',['../class_a_user_interface_manager.html#af3e35993c6a778b2d1dd50e377839296',1,'AUserInterfaceManager']]],
+  ['countingdown',['countingDown',['../class_a_snowball.html#a366ca9a320d78e67099b6834bc91d1dd',1,'ASnowball']]],
   ['counts',['Counts',['../struct_catch_1_1_counts.html',1,'Catch']]],
   ['createmesh',['CreateMesh',['../class_a_track_generator_bezier.html#add24d98642fb9bf3565bfc1f9ca59b97',1,'ATrackGeneratorBezier']]],
   ['createsnowball',['CreateSnowball',['../class_a_track_generator_bezier.html#af4a9e0a8ece1081213592017e2818ffe',1,'ATrackGeneratorBezier']]],
+  ['createtriangle',['CreateTriangle',['../class_a_speed_boost_generator.html#a0c616e9517480d7e418b4f94053a264c',1,'ASpeedBoostGenerator']]],
   ['createtriangles',['CreateTriangles',['../class_a_track_generator_bezier.html#a69a9e713291c5735a3f36a9c5094f2e8',1,'ATrackGeneratorBezier']]],
   ['createvertices',['CreateVertices',['../class_a_track_generator_bezier.html#a963320bc9b629724355a5f9cb6a6b141',1,'ATrackGeneratorBezier']]],
   ['createwakparticles',['CreateWakParticles',['../class_a_track_generator_bezier.html#a5997b6d3fc32dd5e2ebb18b548de593b',1,'ATrackGeneratorBezier']]]

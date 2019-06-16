@@ -71,7 +71,9 @@ var hierarchy =
     [ "Catch::IContext", "struct_catch_1_1_i_context.html", [
       [ "Catch::IMutableContext", "struct_catch_1_1_i_mutable_context.html", null ]
     ] ],
-    [ "Catch::IExceptionTranslator", "struct_catch_1_1_i_exception_translator.html", null ],
+    [ "Catch::IExceptionTranslator", "struct_catch_1_1_i_exception_translator.html", [
+      [ "Catch::ExceptionTranslatorRegistrar::ExceptionTranslator< T >", "class_catch_1_1_exception_translator_registrar_1_1_exception_translator.html", null ]
+    ] ],
     [ "Catch::IExceptionTranslatorRegistry", "struct_catch_1_1_i_exception_translator_registry.html", null ],
     [ "Catch::IGeneratorTracker", "struct_catch_1_1_i_generator_tracker.html", null ],
     [ "Catch::IMutableEnumValuesRegistry", "struct_catch_1_1_i_mutable_enum_values_registry.html", null ],
@@ -194,6 +196,10 @@ var hierarchy =
     [ "Catch::StringMaker< wchar_t * >", "struct_catch_1_1_string_maker_3_01wchar__t_01_5_01_4.html", null ],
     [ "Catch::StringMaker< wchar_t const * >", "struct_catch_1_1_string_maker_3_01wchar__t_01const_01_5_01_4.html", null ],
     [ "Catch::StringRef", "class_catch_1_1_string_ref.html", null ],
+    [ "TargetRules", null, [
+      [ "PenguinGlideEditorTarget", "class_penguin_glide_editor_target.html", null ],
+      [ "PenguinGlideTarget", "class_penguin_glide_target.html", null ]
+    ] ],
     [ "Catch::TestCaseInfo", "struct_catch_1_1_test_case_info.html", [
       [ "Catch::TestCase", "class_catch_1_1_test_case.html", null ]
     ] ],

@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('class_mesh_section.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>This file is used as different sections of the generated mesh.  
+<p>This class is the section out of which the track is built. It holds the curve and points along the curve, ready to be used to create a mesh.  
  <a href="class_mesh_section.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_mesh_section_8h_source.html">MeshSection.h</a>&gt;</code></p>
@@ -136,8 +136,8 @@ TArray&lt; FVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>po
 <tr class="separator:adc7ea8da6fb89688309b91442946efc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This file is used as different sections of the generated mesh. </p>
-<p>The mesh section is split into points. The class keeps track of these points and the nodes attached to it. </p><dl class="section author"><dt>Author</dt><dd>Max Groen </dd></dl>
+<div class="textblock"><p>This class is the section out of which the track is built. It holds the curve and points along the curve, ready to be used to create a mesh. </p>
+<p>The mesh keeps track of the nodes it has used in order to create its Bezier curve. It splits this bezier curve into an amount of smaller points so these points can be used to create vertices. </p><dl class="section author"><dt>Author</dt><dd>Max Groen </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>05/05/2019 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Energyslam™ </dd></dl>
@@ -160,7 +160,8 @@ TArray&lt; FVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>po
 
 <p>Initializes the first mesh section. </p>
 <p>The class needs a seperate initialize function as the update function uses the nodes of the previous mesh section. This function only uses the initial nodes to create the first mesh section</p>
-<p>Bad smell: Having two seperate functions to initialize the first mesh and update the rest is confusing By using a different way to pass direction, we can merge it into a single function to eliminate duplicate code </p>
+<p>This function is used for the initial mesh. It has to be created using this method as it adds to the readability of the code and makes it clear this function initializes the first mesh. This is only called at the start of the program as no previous sections exist yet. </p>
+<p>&lt; nodes are assigned here. You can set these in the editor if you want to use different ones than the initially assigned ones </p>
 
 </div>
 </div>
@@ -192,7 +193,9 @@ TArray&lt; FVector &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>po
 
 <p>Creates or updates a mesh section. </p>
 <p>The class needs a seperate initialize function as the update function uses the nodes of the previous mesh section. This function only uses the initial nodes to create the first mesh section</p>
-<p>Bad smell: uses the last node and the one before of the meshsection before this one to calculate position and direction Best solution would to somehow incorporate the directionvector of the previous section instead of "manually" doing it like this </p>
+<p>This function takes care of changes the nodes of the mesh and creating new points. These newly created points are used in the TrackGeneratorBezier to create a new mesh, re-using points of previous nodes to make sure the meshes fit on each other in the same direction </p>
+<p>This loop splits the bezier curve into smaller points. It splits it in the amount that pointSpacer has been given. If this is not done the mesh will only exist out of its four initial nodes which only creates four huge blocks as track parts. Not pretty!</p>
+<p>Each points needs an offset in the Y direction to make sure it aligns with the previous mesh. If this is not done, it will create a part of the mesh over the old mesh</p>
 
 </div>
 </div>
